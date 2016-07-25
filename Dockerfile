@@ -35,6 +35,7 @@ RUN set -x \
 ADD supervisor.conf /etc/supervisor/conf.d/supervisord.conf
 ADD hbase-service.sh /opt/hbase-service.sh
 ADD opentsdb-service.sh /opt/opentsdb-service.sh
+ADD opentsdb.conf /etc/opentsdb/opentsdb.conf
 
 EXPOSE 4242
 VOLUME ["${HBASE_DATA}"]
